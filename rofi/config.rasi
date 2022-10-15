@@ -1,6 +1,6 @@
 configuration {
-      modes: [ combi ];
-               combi-modes: [ window, drun, run ];
+    modes: [ combi ];
+    combi-modes: [ window, drun, run ];
 }
 
-@theme "slate"
+@theme "rounded-pink-dark"
