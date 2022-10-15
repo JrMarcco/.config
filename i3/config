@@ -47,8 +47,8 @@ bindsym XF86AudioLowerVolume exec amixer set Master playback 3275-
 bindsym XF86AudioMicMute exec amixer set Master toggle
 
 # Use light to adjust brightess
-bindsym XF86MonBrightnessUp exec light -A 10
-bindsym XF86MonBrightnessDown exec light -U 10
+bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
