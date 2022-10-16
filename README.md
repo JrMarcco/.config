@@ -34,6 +34,9 @@
 
   # compton，设置窗口透明度
   sudo pacman -S compton
+  
+  # 安装 chrome
+  yay -S google-chrome
   ```
 * 中文输入法 fcitx5
 
