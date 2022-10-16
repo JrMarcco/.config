@@ -66,6 +66,9 @@
   ```powershell
   git clone https://github.com/JrMarcco/.config.git cfg
   cd cfg
+  
+  # 给 polybar 启动脚本增加可执行权限
+  chmod +x polybar/launch.sh
 
   cp alacritty ~/.config
   cp i3 ~/.config
