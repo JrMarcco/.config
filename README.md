@@ -61,8 +61,6 @@
 
 * 设置配置
 
-  配置文件我放在[https://github.com/JrMarcco/.config](https://github.com/JrMarcco/.config)
-
   ```powershell
   git clone https://github.com/JrMarcco/.config.git cfg
   cd cfg
