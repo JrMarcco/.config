@@ -45,6 +45,13 @@
   sudo pacman -S fcitx5-gtk
   # 中文包
   sudo pacman -S fcitx5-chinese-addons
+  
+  # 配置环境变量
+  vim ~/.xprofile
+  # 内容为
+  export GTK_IM_MODULE=fcitx
+  export QT_IM_MODULE=fcitx
+  export XMODIFIERS="@im=fcitx"
 
   # 配置输入法
   fcitx5-configtool
