@@ -41,9 +41,9 @@ exec --no-startup-id nm-applet
 # bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 # bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-
-bindsym XF86AudioRaiseVolume exec amixer set Master playback 3275+
-bindsym XF86AudioLowerVolume exec amixer set Master playback 3275-
+bindsym XF86AudioRaiseVolume exec amixer -D pulse set Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -D pulse set Master 5%-
+bindsym XF86AudioMute exec amixer -D pulse set Master toggle
 
 # Use light to adjust brightess
 bindsym XF86MonBrightnessUp exec light -A 5
