@@ -142,11 +142,4 @@
     # compton
     exec_always --no-startup-id compton
     ```
-  * 第 201 行：绑定快捷键
-
-    ```powershell
-    # 思源笔记
-    bindsym $mod+n exec ~/workspaces/tools/siyuan-linux.AppImage
-    ```
-
 ---
