@@ -197,5 +197,3 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id ~/workspaces/tools/clash.for.windows/cfw &
 exec_always --no-startup-id fcitx5
 exec_always --no-startup-id compton
-
-bindsym $mod+control+l exec --no-startup-id i3lock -c000000 -e -n
