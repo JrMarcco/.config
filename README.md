@@ -32,8 +32,8 @@
   # rofi
   sudo pacman -S rofi
 
-  # compton，设置窗口透明度
-  sudo pacman -S compton
+  # picom，窗口渲染
+  yay -S picom-jonaburg-git
   
   # 安装 chrome
   yay -S google-chrome
