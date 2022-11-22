@@ -139,7 +139,5 @@
     exec_always --no-startup-id ~/workspaces/tools/clash.for.windows/cfw &
     # 中文输入法
     exec_always --no-startup-id fcitx5
-    # compton
-    exec_always --no-startup-id compton
     ```
 ---
