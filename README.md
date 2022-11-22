@@ -33,7 +33,7 @@
   sudo pacman -S rofi
 
   # picom，窗口渲染
-  yay -S picom-jonaburg
+  yay -S picom-jonaburg-git
   
   # 安装 chrome
   yay -S google-chrome
