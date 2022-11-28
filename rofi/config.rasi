@@ -1,6 +1,6 @@
 configuration {
-    modes: [ combi ];
-    combi-modes: [ window, drun, run ];
+    modes: "drun";
+    show-icons: true;
 }
 
-@theme "rounded-pink-dark"
+@theme "spotlight"
