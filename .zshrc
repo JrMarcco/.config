@@ -100,6 +100,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias rm="rm -i"
+alias mv="mv -i"
+alias cp="cp -i"
+
 alias k="kubectl"
 alias ks="kubectl -n kube-system"
 
