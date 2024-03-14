@@ -1,0 +1,10 @@
+[env]
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[window]
+padding = { x = 8, y = 8 }
+decorations_theme_variant = "Dark"
+
+[font]
+normal = { family = "Fira Code", style = "Regular" }
+size = 16
