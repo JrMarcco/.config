@@ -100,12 +100,22 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias k="kubectl"
-alias ks="kubectl -n kube-system"
+alias python="/opt/homebrew/opt/python/bin/python3"
+alias pip="/opt/homebrew/opt/python/bin/pip3"
 
-setopt no_nomatch
+export HOMEBREW_HOME="/opt/homebrew"
+
+export CARGO_HOME="$HOME/.cargo"
 
 export GOROOT="/usr/local/go"
-export GOPROXY="https://goproxy.cn,direct"
+export GOPROXY="https://goproxy.cn,direct/"
 
-export PATH="$PATH:$GOROOT/bin"
+export JAVA_HOME="/usr/local/jdk-21/Contents/Home"
+export CLASSPATH=".:$JAVA_HOME/lib"
+
+export MVND_HOME="/usr/local/maven-mvnd"
+export MAVEN_HOME="$MVND_HOME/mvn"
+
+export PATH="$PATH:$HOMEBREW_HOME/bin:$CARGO_HOME/bin:$GOROOT/bin:$JAVA_HOME/bin:$MVND_HOME/bin:$MAVEN_HOME/bin"
+
+eval "$(fnm env --use-on-cd)"
