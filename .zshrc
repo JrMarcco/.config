@@ -100,22 +100,17 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias python="/opt/homebrew/opt/python/bin/python3"
-alias pip="/opt/homebrew/opt/python/bin/pip3"
-
-export HOMEBREW_HOME="/opt/homebrew"
-
 export CARGO_HOME="$HOME/.cargo"
 
-export GOROOT="/usr/local/go"
+export GOROOT="$HOME/Workspace/sdk/go"
 export GOPROXY="https://goproxy.cn,direct/"
 
-export JAVA_HOME="/usr/local/jdk-21/Contents/Home"
+export JAVA_HOME="$HOME/Workspace/sdk/jdk-21"
 export CLASSPATH=".:$JAVA_HOME/lib"
 
-export MVND_HOME="/usr/local/maven-mvnd"
+export MVND_HOME="$HOME/Workspace/sdk/maven-mvnd"
 export MAVEN_HOME="$MVND_HOME/mvn"
 
-export PATH="$PATH:$HOMEBREW_HOME/bin:$CARGO_HOME/bin:$GOROOT/bin:$JAVA_HOME/bin:$MVND_HOME/bin:$MAVEN_HOME/bin"
+export PATH="$PATH:$CARGO_HOME/bin:$GOROOT/bin:$JAVA_HOME/bin:$MVND_HOME/bin:$MAVEN_HOME/bin"
 
 eval "$(fnm env --use-on-cd)"
