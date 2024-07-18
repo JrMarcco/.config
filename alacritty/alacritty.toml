@@ -1,10 +1,19 @@
+shell = "/bin/zsh"
+
 [env]
 WINIT_X11_SCALE_FACTOR = "1.0"
 
 [window]
+dimensions = { columns = 120, lines = 36 }
+position = { x = 0, y = 0 }
 padding = { x = 8, y = 8 }
 decorations_theme_variant = "Dark"
+title = "ALacritty"
+dynamic_title = false
 
 [font]
 normal = { family = "Fira Code", style = "Regular" }
 size = 16
+
+[cursor]
+style = { shape = "UnderLine", blinking = "Off" }
