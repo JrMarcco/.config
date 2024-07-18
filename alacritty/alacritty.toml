@@ -1,6 +1,6 @@
 shell = "/bin/zsh"
 import = [
-    "~/.config/alacritty/themes/tender.toml"
+    "~/.config/alacritty/themes/monoka.toml"
 ]
 
 [env]
