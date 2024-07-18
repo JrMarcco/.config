@@ -1,4 +1,7 @@
 shell = "/bin/zsh"
+import = [
+    "~/.config/alacritty/themes/tender.toml"
+]
 
 [env]
 WINIT_X11_SCALE_FACTOR = "1.0"
