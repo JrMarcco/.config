@@ -1,4 +1,4 @@
-shell = "/bin/zsh"
+shell = { program = "/bin/zsh", args = ["-l"] }
 import = [
     "~/.config/alacritty/themes/monoka.toml"
 ]
