@@ -1,4 +1,7 @@
+[terminal]
 shell = { program = "/bin/zsh", args = ["-l"] }
+
+[general]
 import = [
     "~/.config/alacritty/themes/monoka.toml"
 ]
@@ -8,7 +11,6 @@ WINIT_X11_SCALE_FACTOR = "1.0"
 
 [window]
 dimensions = { columns = 120, lines = 36 }
-position = { x = 0, y = 0 }
 padding = { x = 8, y = 8 }
 decorations_theme_variant = "Dark"
 title = "ALacritty"
