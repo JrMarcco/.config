@@ -115,8 +115,13 @@ export MAVEN_HOME="$MVND_HOME/mvn"
 
 export PATH="$PATH:$HOMEBREW_HOME/bin:$CARGO_HOME/bin:$GOROOT/bin:$JAVA_HOME/bin:$MVND_HOME/bin:$MAVEN_HOME/bin"
 
+# Mac 
 source $HOMEBREW_HOME/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOMEBREW_HOME/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Ubuntu & Debian
+# source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 source "$HOME/.atuin/bin/env"
 eval "$(atuin init zsh)"
