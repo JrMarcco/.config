@@ -115,4 +115,10 @@ export MAVEN_HOME="$MVND_HOME/mvn"
 
 export PATH="$PATH:$HOMEBREW_HOME/bin:$CARGO_HOME/bin:$GOROOT/bin:$JAVA_HOME/bin:$MVND_HOME/bin:$MAVEN_HOME/bin"
 
+source $HOMEBREW_HOME/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOMEBREW_HOME/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+source "$HOME/.atuin/bin/env"
+eval "$(atuin init zsh)"
+
 eval "$(fnm env --use-on-cd)"
