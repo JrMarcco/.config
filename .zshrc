@@ -125,7 +125,7 @@ export HOMEBREW_HOME="/opt/homebrew"
 export CARGO_HOME="$HOME/.cargo"
 
 export GOROOT="$HOME/Workspace/sdk/go"
-export GOPATH="$HOME/Projects/go"
+export GOPATH="$HOME/Workspace/go-path"
 export GOPROXY="https://goproxy.cn,direct"
 
 export JAVA_HOME="$HOME/Workspace/sdk/jdk-21/Contents/Home"
