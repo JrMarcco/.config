@@ -1,11 +1,13 @@
+# Amazon Q pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
+# Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
+# load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="ys"
@@ -91,20 +93,39 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/jrmarcco/Workspace/sdk/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/jrmarcco/Workspace/sdk/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/jrmarcco/Workspace/sdk/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/jrmarcco/Workspace/sdk/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
 export HOMEBREW_HOME="/opt/homebrew"
 
 export CARGO_HOME="$HOME/.cargo"
 
 export GOROOT="$HOME/Workspace/sdk/go"
+export GOPATH="$HOME/Projects/go"
 export GOPROXY="https://goproxy.cn,direct"
 
 export JAVA_HOME="$HOME/Workspace/sdk/jdk-21/Contents/Home"
@@ -113,17 +134,12 @@ export CLASSPATH=".:$JAVA_HOME/lib"
 export MVND_HOME="$HOME/Workspace/sdk/maven-mvnd"
 export MAVEN_HOME="$MVND_HOME/mvn"
 
-export PATH="$PATH:$HOMEBREW_HOME/bin:$CARGO_HOME/bin:$GOROOT/bin:$JAVA_HOME/bin:$MVND_HOME/bin:$MAVEN_HOME/bin"
+export PATH="$PATH:$HOMEBREW_HOME/bin:$CARGO_HOME/bin:$GOROOT/bin:$GOPATH/bin:$JAVA_HOME/bin:$MVND_HOME/bin:$MAVEN_HOME/bin"
 
-# Mac 
 source $HOMEBREW_HOME/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOMEBREW_HOME/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Ubuntu & Debian
-# source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-source "$HOME/.atuin/bin/env"
+source $HOME/.atuin/bin/env
 eval "$(atuin init zsh)"
 
 eval "$(fnm env --use-on-cd)"
