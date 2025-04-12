@@ -109,18 +109,14 @@ alias go-update="bash ~/Workspace/sdk/go-updater.sh"
 
 export HOMEBREW_HOME="/opt/homebrew"
 
-export CARGO_HOME="$HOME/.cargo"
-
 export GOROOT="$HOME/Workspace/sdk/go"
 export GOPATH="$HOME/Workspace/go-path"
 
-export JAVA_HOME="$HOME/Workspace/sdk/jdk-21/Contents/Home"
-export CLASSPATH=".:$JAVA_HOME/lib"
+export CONDA_HOME="$HOME/Workspace/sdk/miniconda"
 
-export MVND_HOME="$HOME/Workspace/sdk/maven-mvnd"
-export MAVEN_HOME="$MVND_HOME/mvn"
+export CARGO_HOME="$HOME/.cargo"
 
-export PATH="$PATH:$HOMEBREW_HOME/bin:$CARGO_HOME/bin:$GOROOT/bin:$GOPATH/bin:$JAVA_HOME/bin:$MVND_HOME/bin:$MAVEN_HOME/bin"
+export PATH="$PATH:$HOMEBREW_HOME/bin:$GOROOT/bin:$GOPATH/bin:$CONDA_HOME/bin:$CARGO_HOME/bin"
 
 source $HOMEBREW_HOME/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOMEBREW_HOME/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -129,18 +125,3 @@ source $HOME/.atuin/bin/env
 eval "$(atuin init zsh)"
 
 eval "$(fnm env --use-on-cd)"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/jrmarcco/Workspace/sdk/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/jrmarcco/Workspace/sdk/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/jrmarcco/Workspace/sdk/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/jrmarcco/Workspace/sdk/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
