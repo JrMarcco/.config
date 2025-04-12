@@ -124,4 +124,4 @@ source $HOMEBREW_HOME/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.atuin/bin/env
 eval "$(atuin init zsh)"
 
-eval "$(fnm env --use-on-cd)"
+eval "$(fnm env --use-on-cd --shell zsh)"
