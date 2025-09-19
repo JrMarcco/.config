@@ -105,8 +105,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias go-update="bash ~/Workspace/sdk/go-updater.sh"
-
 export HOMEBREW_HOME="/opt/homebrew"
 
 export GOROOT="$HOME/Workspace/sdk/go"
