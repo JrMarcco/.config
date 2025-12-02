@@ -123,3 +123,8 @@ source $HOME/.atuin/bin/env
 eval "$(atuin init zsh)"
 
 eval "$(fnm env --use-on-cd --shell zsh)"
+
+# Code added by Cursor
+if [[ "$TERM_PROGRAM" == "Cursor" ]]; then
+  . "/Applications/Cursor.app/Contents/Resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-rc.zsh"
+fi
